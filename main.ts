@@ -1,18 +1,21 @@
-tiles.setTilemap(tiles.createTilemap(hex`0a000d0000010303030303030400000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000608020e0e090807000000000c0e0e0500000000010d0a0e0e0b0d0400000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e050000060808080808080700`, img`
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    . . . . . . . . . . 
-    `, [myTiles.transparency16,sprites.dungeon.purpleOuterNorthWest,sprites.dungeon.purpleInnerNorthEast,sprites.dungeon.purpleOuterNorth0,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.purpleOuterEast0,sprites.dungeon.purpleOuterSouthEast,sprites.dungeon.purpleOuterSouthWest,sprites.dungeon.purpleOuterSouth1,sprites.dungeon.purpleInnerNorthWest,sprites.dungeon.purpleInnerSouthEast,sprites.dungeon.purpleInnerSouthWest,sprites.dungeon.purpleOuterWest1,sprites.dungeon.purpleOuterNorth1,sprites.dungeon.floorLight0], TileScale.Sixteen))
+scene.onOverlapTile(SpriteKind.Player, myTiles.transparency16, function (sprite, location) {
+	
+})
+tiles.setTilemap(tiles.createTilemap(hex`0a000d0000010303030303030400000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000608020e0e090807000000000c0e0e0500000000010d0a0e0e0b0d0400000c0e0e0e0e0e0e0500000c0e0e0e0e0e0e0500000c0e0e0e0e0f0e0500000c0e0e0e0e0e0e050000060808080808080700`, img`
+    . 2 2 2 2 2 2 2 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 2 2 . . 2 2 2 . 
+    . . . 2 . . 2 . . . 
+    . 2 2 2 . . 2 2 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 . . . . . . 2 . 
+    . 2 2 2 2 2 2 2 2 . 
+    `, [myTiles.transparency16,sprites.dungeon.purpleOuterNorthWest,sprites.dungeon.purpleInnerNorthEast,sprites.dungeon.purpleOuterNorth0,sprites.dungeon.purpleOuterNorthEast,sprites.dungeon.purpleOuterEast0,sprites.dungeon.purpleOuterSouthEast,sprites.dungeon.purpleOuterSouthWest,sprites.dungeon.purpleOuterSouth1,sprites.dungeon.purpleInnerNorthWest,sprites.dungeon.purpleInnerSouthEast,sprites.dungeon.purpleInnerSouthWest,sprites.dungeon.purpleOuterWest1,sprites.dungeon.purpleOuterNorth1,sprites.dungeon.floorLight0,sprites.dungeon.chestClosed], TileScale.Sixteen))
 let mySprite = sprites.create(img`
     . . . . f f f f f . . . . . . . 
     . . . f e e e e e f . . . . . . 
