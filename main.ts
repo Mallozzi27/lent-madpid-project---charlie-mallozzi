@@ -1,12 +1,20 @@
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (sprite, location) {
     game.over(false)
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairEast, function (sprite, location) {
+    tiles.setTilemap(tilemap`level5`)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLarge, function (sprite, location) {
     tiles.setTilemap(tilemap`level2`)
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
+    tiles.setTilemap(tilemap`level6`)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (sprite, location) {
     tiles.setTilemap(tilemap`level3`)
+    textSprite = textsprite.create("The grass is thick, find the correct route.")
 })
+let textSprite: TextSprite = null
 tiles.setTilemap(tilemap`level1`)
 let mySprite = sprites.create(img`
     . . . . f f f f f . . . . . . . 
