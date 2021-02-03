@@ -1,11 +1,14 @@
-scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles0, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.saplingPine, function (sprite, location) {
     game.over(false)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrangeDepressed, function (sprite, location) {
+    tiles.setTilemap(tilemap`level8`)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairEast, function (sprite, location) {
     tiles.setTilemap(tilemap`level5`)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleRedCrystal, function (sprite, location) {
-	
+    tiles.setTilemap(tilemap`level7`)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairLarge, function (sprite, location) {
     tiles.setTilemap(tilemap`level2`)
