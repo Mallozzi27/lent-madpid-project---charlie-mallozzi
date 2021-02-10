@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const Text = SpriteKind.create()
+}
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.saplingPine, function (sprite, location) {
     game.over(false)
 })
