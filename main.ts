@@ -4,6 +4,9 @@ namespace SpriteKind {
 scene.onOverlapTile(SpriteKind.Player, sprites.castle.saplingPine, function (sprite, location) {
     game.over(false)
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
+    game.over(true)
+})
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.buttonOrangeDepressed, function (sprite, location) {
     tiles.setTilemap(tilemap`level8`)
 })
